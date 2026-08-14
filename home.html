@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Playball&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Deutsch Katta</title>
+</head>
+<body data-page="home">
+    <nav class="navbar atkinson-hyperlegible-regular">
+        <div class="navbar_logo">
+            <a href="home.html"><img src="logo.png" alt="Logo" data-i18n-attr="alt" data-i18n="logo_alt"></a>
+        </div>
+        <button id="navToggle" class="hamburger" aria-label="Open navigation" aria-expanded="false">☰</button>
+        <ul class="navbar_links">
+            <li><a href="home.html" data-i18n="nav_home">Home</a></li>
+            <li><a href="home.html#testimonials" data-i18n="nav_testimonials">Testimonials</a></li>
+            <li><a href="about.html" data-i18n="nav_about">About</a></li>
+            <li><a href="why-german.html" data-i18n="nav_why">Why German?</a></li>
+            <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
+            <li><a href="privacy-policy.html" data-i18n="nav_privacy">Privacy Policy</a></li>
+        </ul>
+        <button id="navClose" class="nav-close" aria-label="Close navigation">✕</button>
+        <button id="langToggle" class="lang-toggle" type="button" aria-live="polite">DE</button>
+    </nav>
+    <div class="home_header">
+        <div class="home_title" data-i18n="home_title">Deutsch Katta</div>
+        <div class="home_subtitle" data-i18n="home_subtitle">Learn German with us!</div>
+        <div class="yes-set">
+            <p data-i18n="home_intro">Let's cut to the chase. Here's how to decide if Deutsch Katta is the right choice for you:</p>
+            <ul>
+                <li data-i18n="home_question1">Are you looking for a reliable way to boost your career or study opportunities in Germany?</li>
+                <li data-i18n="home_question2">Do you want to avoid crowded, generic institutes and get personalized attention from an expert instead?</li>
+                <li data-i18n="home_question3">Would it give you peace of mind to learn directly from a highly experienced, native-level tutor right here in Pune?</li>
+            </ul>
+            <p data-i18n="home_contact_prompt">If so, welcome aboard! Contact us here to get in touch.</p>
+        </div>
+    </div>
+    <div class="homepage-contact" id="contact">
+        <div class="form-with-flags">
+            <div class="contact-form-div">
+                <form action="https://api.web3forms.com/submit" method="POST" id="contactForm" accept-charset="UTF-8">
+                    <h1 data-i18n="contact_form_title">Contact Form</h1>
+                    <input type="hidden" name="access_key" value="602658fd-7b80-43ac-b844-eda64d518c26">
+                    <input type="hidden" name="subject" value="New message from Deutsch Katta website">
+                    <input type="hidden" name="from_name" value="Deutsch Katta Website">
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                    <input type="text" name="first-name" data-i18n="first_name_placeholder" data-i18n-attr="placeholder" required>
+                    <input type="text" name="last-name" data-i18n="last_name_placeholder" data-i18n-attr="placeholder" required>
+                    <input type="email" id="emailInput" name="email" data-i18n="email_placeholder" data-i18n-attr="placeholder" required>
+                    <textarea rows="5" cols="60" name="justification" id="justification" data-i18n="justification_placeholder" data-i18n-attr="placeholder" required></textarea>
+                    <textarea rows="5" cols="60" name="message" id="message" data-i18n="message_placeholder" data-i18n-attr="placeholder"></textarea>
+                    <button type="submit" class="submit-button" data-i18n="submit_button">Submit</button>
+                    <p id="formStatus" class="form-status" role="status" aria-live="polite"></p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="testimonials-section" id="testimonials">
+        <h2>What students say</h2>
+        <div class="testimonial-grid">
+            <article class="testimonial-card">
+                <p data-i18n="testimonial_1"></p>
+            </article>
+            <article class="testimonial-card">
+                <p data-i18n="testimonial_2"></p>
+            </article>
+            <article class="testimonial-card">
+                <p data-i18n="testimonial_3"></p>
+            </article>
+            <article class="testimonial-card">
+                <p data-i18n="testimonial_4"></p>
+            </article>
+        </div>
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
